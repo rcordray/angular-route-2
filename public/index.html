@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="vendors/angular.js"></script>
+    <script src="vendors/angular-route.js"></script>
+    <script src="client.js"></script>
+    <script src="controllers/red.controller.js"></script>
+    <script src="controllers/yellow.controller.js"></script>
+    <script src="controllers/blue.controller.js"></script>
+    <script src="controllers/green.controller.js"></script>
+
+    <title>Angular Routes</title>
+</head>
+
+<body ng-app="ColorApp">
+    <p>Angular and stuff</p>
+    <ng-view></ng-view>
+    <div>
+        <ul>
+            <li>
+                <a href="#!homepage">Home</a>
+            </li>
+            <li>
+                <a href="#!red">Red</a>
+            </li>
+            <li>
+                <a href="#!yellow">Yellow</a>
+            </li>
+            <li>
+                <a href="#!blue">Blue</a>
+            </li>
+            <li>
+                <a href="#!green">Green</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
